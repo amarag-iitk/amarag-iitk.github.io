@@ -1,0 +1,28 @@
+# Project team members listed below will appear on the /team page
+
+- status: peerrev
+  number: 36.
+  authors: Berndt C., Planke S., Alvarez Zarikian C.A., Frieling J., Millett J.M., Jones M.T., Brinkhuis H., Bünz S., Svensen H.H., Longman J., Scherer R.P., Karstens J., Manton B., Nelissen M., Huismans R.S., <strong>Agarwal A.</strong>, Andrews G.D.M., Betlem P., Bhattacharya J., Chatterjee S., Christopoulou M., Vincent J. Clementi, Ferré E.C., Filina Y. Irina, Guo P., Harper D.T., Lambart S., Mohn G., Nakaoka R., Tegner C., Varela N., Wang M., Xu W., Yager S.L. 
+  #details: 36. Berndt C., Planke S., Alvarez Zarikian C.A., Frieling J., Millett J.M., Jones M.T., Brinkhuis H., Bünz S., Svensen H.H., Longman J., Scherer R.P., Karstens J., Manton B., Nelissen M., Huismans R.S., Agarwal A., Andrews G.D.M., Betlem P., Bhattacharya J., Chatterjee S., Christopoulou M., Vincent J. Clementi, Ferré E.C., Filina Y. Irina, Guo P., Harper D.T., Lambart S., Mohn G., Nakaoka R., Tegner C., Varela N., Wang M., Xu W., Yager S.L. (2023). Shallow-water hydrothermal venting linked to the Paleocene Eocene Thermal Maximum. Nature geoscience. DOI: 10.1038/s41561-023-01246-8
+  year: 2023
+  name: Shallow-water hydrothermal venting linked to the Paleocene Eocene Thermal Maximum
+  publishing: Nature geoscience
+  doi: 10.1038/s41561-023-01246-8
+  
+
+#name: Dr. Gourav Joshi
+  #status: current
+  #role: Post-doc # Will appear next to name
+  #duration: 2020 to 2023, Since 2020 
+  #image: assets/theme/images/fry_ethan-hoover-311143-unsplash.jpg # Can be external link
+  #description: > # Can be Markdown
+  #  Topic:
+  #  Qualification:
+  #  About:
+  #orcid: 0000-0000-0000-0000
+  #researchgate: researchgate_username
+  #googlescholar: googlescholar_username
+  #twitter: twitter_username
+  #mastodon: https://mastodon.social/@mastodon_username
+  #github: github_username
+  #email: name@example.com
