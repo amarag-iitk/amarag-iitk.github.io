@@ -138,4 +138,35 @@ li{
 .container {
     position: relative;
     text-align: center;
-    color: white}
+    color: white
+}
+
+@media screen and (max-width: 1300px) and (min-width: 600px) {
+    .normal-text-header{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 18px;
+    }
+    
+    .normal-text{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .normal-text-header{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 14px;
+    }
+    
+    .normal-text{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 13px;
+        text-align: justify;
+    }
+}
