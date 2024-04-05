@@ -52,6 +52,7 @@ li{
 .publication-elements{
     font-family: 'Times New Roman', Times, serif;
     color: black;
+    font-size: 19px;
     padding-left: 5px;
     text-align: justify;
     text-justify: inter-word;
@@ -137,7 +138,7 @@ li{
 .container {
     position: relative;
     text-align: center;
-    color: white}    color: white
+    color: white
 }
 
 .designations{
