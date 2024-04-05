@@ -52,7 +52,7 @@ li{
 .publication-elements{
     font-family: 'Times New Roman', Times, serif;
     color: black;
-    font-size: 18px;
+    font-size: 19px;
     padding-left: 5px;
     text-align: justify;
     text-justify: inter-word;
@@ -141,6 +141,16 @@ li{
     color: white
 }
 
+.designations{
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 16px;
+}
+
+.about{
+    
+}
+
 @media screen and (max-width: 1300px) and (min-width: 600px) {
     .normal-text-header{
         font-family: 'Times New Roman', Times, serif;
@@ -153,6 +163,21 @@ li{
         color: black;
         font-size: 16px;
         text-align: justify;
+    }
+
+    .publication-elements{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 17px;
+        padding-left: 5px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .designations{
+        text-align: center; 
+        font-family: 'Times New Roman', Times, serif; 
+        font-size: 16px;
     }
 }
 
@@ -168,5 +193,20 @@ li{
         color: black;
         font-size: 13px;
         text-align: justify;
+    }
+
+    .publication-elements{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 15px;
+        padding-left: 5px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .designations{
+        text-align: center; 
+        font-family: 'Times New Roman', Times, serif; 
+        font-size: 16px;
     }
 }
