@@ -76,6 +76,11 @@ li{
     border-radius: 25px;
 }
 
+.index-fp-detail-box{
+    background: white;
+    color: #00876c;
+}
+
 .index-designation{
     color:black;
     border-radius: 25px;
