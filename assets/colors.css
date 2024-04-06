@@ -84,7 +84,7 @@ li{
 .index-designation{
     color:black;
     border-radius: 25px;
-    border: 2px solid #00876c;
+    border: 2px solid #ffffff;
 }
 
 .research-image-left{
@@ -149,7 +149,7 @@ li{
 .designations{
     text-align: center; 
     font-family: 'Times New Roman', Times, serif; 
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .about{
