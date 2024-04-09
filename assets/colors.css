@@ -23,8 +23,14 @@
 
 .nav-link{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 20px;
     color:#00876c;
+}
+
+@media screen and (max-width: 820px) {
+    .nav-link{
+        font-size: 18px;
+    }
 }
 /*Colors and theme*/
 .primary-theme{
