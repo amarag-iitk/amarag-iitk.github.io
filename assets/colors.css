@@ -113,7 +113,6 @@ li{
 .index-designation{
     color:black;
     border-radius: 25px;
-    border: 2px solid #ffffff;
 }
 
 .research-image-left{
@@ -178,7 +177,7 @@ li{
 .designations{
     text-align: center; 
     font-family: 'Times New Roman', Times, serif; 
-    font-size: 26px;
+    font-size: 1.5vw;
 }
 
 .about{
