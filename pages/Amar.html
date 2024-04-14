@@ -21,6 +21,48 @@
         max-width: 2000px;
         margin: auto;
     }
+    .page-des{
+        color: #00876c;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .page-dates{
+        color: white; 
+        background-color: #00876c; 
+        padding-left: 2px; 
+        padding-right: 2px; 
+        font-size: 18px;
+    }
+    .page-place{
+        font-size: 20px;
+        font-style: italic;
+    }
+    .page-heading{
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1150px) {
+        .page-des{
+        color: #00876c;
+        font-weight: bold;
+        font-size: 20px;
+    }
+        .page-dates{
+        color: white; 
+        background-color: #00876c; 
+        padding-left: 2px; 
+        padding-right: 2px; 
+        font-size: 16px;
+    }
+        .page-place{
+        font-size: 18px;
+        font-style: italic;
+    }
+        .page-heading{
+        font-size: 22px;
+    }
+}
+
 </style>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -31,7 +73,7 @@
 <!--header-->
 <!--good image for a top row thing in the main page-->
 <div class="row primary-theme" style="margin-left: auto; margin-right: auto;">
-    <div class="col-2" style="">
+    <div class="col-2">
         <img src="../assets/Flag1.png" style="float: right;" alt="" class="d-none d-md-block py-1 header-logo">    
     </div>
     <div class="col justify-content-center pt-4">
@@ -39,7 +81,7 @@
             APPLIED STRUCTURAL GEOLOGY GROUP
         </h1>
     </div>
-    <div class="col-2" style="">
+    <div class="col-2">
         <img src="../assets/IITK_logo.png" style="float: left;" alt="" class="d-none d-md-block py-1 header-logo">     
     </div>
 </div>
@@ -58,7 +100,7 @@
     <div class="collapse navbar-collapse" id="navbarNav"> <!--navbarNav is a variable to be used in the data-target-->
         <ul class="navbar-nav mx-auto">
             <li class="nav-item px-4 d-md-block">
-                <a href="../index.html" class="nav-link active">
+                <a href="../index.html" class="nav-link">
                     Home
                 </a>
             </li>
@@ -92,8 +134,8 @@
 </nav>
 
 <!--main content-->
-<div class="my-3 row justify-content-center">
-    <div class="col-11 col-md-11 justify-content-center quote-box">
+<div class="my-3 mx-5 row justify-content-center">
+    <div class="col-12 justify-content-center quote-box">
         <p class="mx-2 my-2 quote">
             &ldquo; <i>People often say that I'm curious about too many things at once... But can you really forbid a man from harboring a desire to know and embrace everything that surrounds him?</i> &rdquo;
         </p>
@@ -102,11 +144,11 @@
         </p>
     </div>
 </div>
-<div class="my-3 row justify-content-center">
+<div class="my-3 mx-5 row justify-content-center">
     <div class="col-3 justify-content-center">
         <img src="../assets/Amar Mexico.jpg" class="" alt="" style="height: auto; width: 100%;">
     </div>
-    <div class="col-7 justify-content-center">
+    <div class="col-9 justify-content-center">
         <div class="row justify-content-center" style="font-family: 'Times New Roman', Times, serif; color: #00876c; font-weight: bold; font-size: 3vw;">
             DR. AMAR AGARWAL
         </div>
@@ -131,103 +173,103 @@
                     Karlsruhe Institute of Technology,<br> 
                     76131-Karlsruhe, Germany <br>
                     Ph. +49 721 602 42141 <br>
-                    <a href="https://sgt.agw.kit.edu/21_549.php" target="_blank" style="color: #00876c;">sgt.agw.kit.edu/21_549.php</a> <br> 
+                    <a href="https://sgt.agw.kit.edu/21_549.php" target="_blank" style="text-decoration: none; color: #00876c;">sgt.agw.kit.edu/21_549.php</a> <br> 
                 </p>
             </div>
         </div>
     </div>
 </div>
-<div class="row justify-content-center">
-    <div class="my-2 col index-designation" style="margin-left: 4.2vw; margin-right: 1vw;">
+<div class="row mx-5 justify-content-center">
+    <div class="my-2 col-12 col-sm-10 col-md-6 index-designation">
         <p class="designations">
-            <span style="font-size: 22px;"><b>Professional Experience</b></span><br>
+            <span class="page-heading"><b>Professional Experience</b></span><br>
             <ul class="designations" style="text-align: left;">
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Assistant Professor</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2019-Present</span><br>
-                <span style="font-style: italic;">Indian Institute of Technology Kanpur, India</span><br>
+                <span class="page-des">Assistant Professor</span><br>
+                <span class="pl-5 page-dates">2019-Present</span><br>
+                <span class="page-place">Indian Institute of Technology Kanpur, India</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Alexander von Humboldt PostDoc</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2017-2019</span><br>
-                <span style="font-style: italic;">University of Freiburg, Germany</span><br>
+                <span class="page-des">Alexander von Humboldt PostDoc</span><br>
+                <span class="pl-5 page-dates">2017-2019</span><br>
+                <span class="page-place">University of Freiburg, Germany</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">DGAPA PostDoc</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2015-2017</span><br>
-                <span style="font-style: italic;">Institute of Geophysics, UNAM, Mexico</span><br>
+                <span class="page-des">DGAPA PostDoc</span><br>
+                <span class="pl-5 page-dates">2015-2017</span><br>
+                <span class="page-place">Institute of Geophysics, UNAM, Mexico</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Doctoral Candidate (DAAD sandwich model)</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2012-2014</span><br>
-                <span style="font-style: italic;">Karlsruhe Institute of Technology, Germany</span><br>
+                <span class="page-des">Doctoral Candidate (DAAD sandwich model)</span><br>
+                <span class="pl-5 page-dates">2012-2014</span><br>
+                <span class="page-place">Karlsruhe Institute of Technology, Germany</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">CSIR-JRF (PhD candidate)</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2011-2015</span><br>
-                <span style="font-style: italic;">Indian Institute of Technology Roorkee, India</span><br>
+                <span class="page-des">CSIR-JRF (PhD candidate)</span><br>
+                <span class="pl-5 page-dates">2011-2015</span><br>
+                <span class="page-place">Indian Institute of Technology Roorkee, India</span><br>
             </li>
             </ul>
         </p>
         <p class="designations">
-            <span style="font-size: 22px;"><b>Education</b></span><br>
+            <span class="page-heading"><b>Education</b></span><br>
             <ul class="designations" style="text-align: left;">
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Doctor of Philosophy</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2015</span><br>
-                <span style="font-style: italic;">Indian Institute of Technology Roorkee, India</span><br>
+                <span class="page-des">Doctor of Philosophy</span><br>
+                <span class="pl-5 page-dates">2015</span><br>
+                <span class="page-place">Indian Institute of Technology Roorkee, India</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Master of Science (Technology) in Geology </span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2011</span><br>
-                <span style="font-style: italic;">Banaras Hindu University, India</span><br>
+                <span class="page-des">Master of Science (Technology) in Geology </span><br>
+                <span class="pl-5 page-dates">2011</span><br>
+                <span class="page-place">Banaras Hindu University, India</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Bachelor of Science in Geology, Maths, Physics</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2008</span><br>
-                <span style="font-style: italic;">Lucknow University, India</span><br>
+                <span class="page-des">Bachelor of Science in Geology, Maths, Physics</span><br>
+                <span class="pl-5 page-dates">2008</span><br>
+                <span class="page-place">Lucknow University, India</span><br>
             </li>
             </ul>
         </p>
     </div>
-    <div class="my-2 col index-designation" style="margin-right: 4.2vw; margin-left: 1vw;">
+    <div class="my-2 col-12 col-sm-10 col-md-6 index-designation">
         <p class="designations">
-            <span style="font-size: 22px;"><b>Academic Awards and Achievements</b></span><br>
+            <span class="page-heading"><b>Academic Awards and Achievements</b></span><br>
             <ul class="designations" style="text-align: left;">
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Guest Scientist of Applied Structural Geology</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">May 2023 onwards</span><br>
-                <span style="font-style: italic;">Institute of Applied Geology, Karlsruhe Institute of Technology</span><br>
+                <span class="page-des">Guest Scientist of Applied Structural Geology</span><br>
+                <span class="pl-5 page-dates">May 2023 onwards</span><br>
+                <span class="page-place">Institute of Applied Geology, Karlsruhe Institute of Technology</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">DAAD Research Ambassador</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2022-2025</span><br>
-                <span style="font-style: italic;">German Academic Exchange Service</span><br>
+                <span class="page-des">DAAD Research Ambassador</span><br>
+                <span class="pl-5 page-dates">2022-2025</span><br>
+                <span class="page-place">German Academic Exchange Service</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Associate of IASc</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2021-2024</span><br>
-                <span style="font-style: italic;">The Indian Academy of Sciences (IASc), Bengaluru, India</span><br>
+                <span class="page-des">Associate of IASc</span><br>
+                <span class="pl-5 page-dates">2021-2024</span><br>
+                <span class="page-place">The Indian Academy of Sciences (IASc), Bengaluru, India</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">AvH Postdoc, University of Freiburg, Germany</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2017-2019</span><br>
-                <span style="font-style: italic;">Alexander von Humboldt Foundation, Germany</span><br>
+                <span class="page-des">AvH Postdoc, University of Freiburg, Germany</span><br>
+                <span class="pl-5 page-dates">2017-2019</span><br>
+                <span class="page-place">Alexander von Humboldt Foundation, Germany</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">DGAPA Postdoc, Universidad Nacional Autónoma de Mexico, Mexico</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2015–2017</span><br>
-                <span style="font-style: italic;">Dirección General Asuntos del Personal Académico, UNAM, Mexico</span><br>
+                <span class="page-des">DGAPA Postdoc, Universidad Nacional Autónoma de Mexico, Mexico</span><br>
+                <span class="pl-5 page-dates">2015–2017</span><br>
+                <span class="page-place">Dirección General Asuntos del Personal Académico, UNAM, Mexico</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">PhD candidate, Karlsruhe Institute of Technology, Karlsruhe, Germany</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2012–2014</span><br>
-                <span style="font-style: italic;">Deutscher Akademischer Austauschdienst (DAAD), Germany</span><br>
+                <span class="page-des">PhD candidate, Karlsruhe Institute of Technology, Karlsruhe, Germany</span><br>
+                <span class="pl-5 page-dates">2012–2014</span><br>
+                <span class="page-place">Deutscher Akademischer Austauschdienst (DAAD), Germany</span><br>
             </li>
             <li>
-                <span style="color: #00876c; font-weight: bold; font-size: 20px;">Junior Research Fellowship for PhD</span><br>
-                <span class="pl-5" style="color: white; background-color: #00876c; padding-left: 2px; padding-right: 2px; font-size: 16px;">2011</span><br>
-                <span style="font-style: italic;">CSIR-UGC NET, India</span><br>
+                <span class="page-des">Junior Research Fellowship for PhD</span><br>
+                <span class="pl-5 page-dates">2011</span><br>
+                <span class="page-place">CSIR-UGC NET, India</span><br>
             </li>
             </ul>
         </p>
