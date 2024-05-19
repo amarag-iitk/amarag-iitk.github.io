@@ -38,6 +38,14 @@
     font-size: 20px;
 }
 
+.current-pos{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: #00876c;
+    padding: 4px;
+    font-size: 16px;
+}
+
 .normal-text{
     font-family: 'Times New Roman', Times, serif;
     color: black;
@@ -190,6 +198,10 @@ li{
         color: black;
         font-size: 18px;
     }
+
+    .current-pos{
+        font-size: 14px;
+    }
     
     .normal-text{
         font-family: 'Times New Roman', Times, serif;
@@ -215,6 +227,10 @@ li{
         font-size: 14px;
     }
     
+    .current-pos{
+        font-size: 10px;
+    }
+
     .normal-text{
         font-family: 'Times New Roman', Times, serif;
         color: black;
@@ -235,13 +251,13 @@ li{
 .about-the-group{
     text-align: center; 
     font-family: 'Times New Roman', Times, serif; 
-    font-size: 2.1vw;
+    font-size: 40px;
 }
 
 .about-the-group-det{
     text-align: justify; 
     font-family: 'Times New Roman', Times, serif; 
-    font-size: 1.53vw;
+    font-size: 28px;
 }
 
 @media screen and (min-width: 988px) and (max-width: 1140px) {
@@ -283,5 +299,25 @@ li{
         text-align: justify; 
         font-family: 'Times New Roman', Times, serif; 
         font-size: 18px;
+    }
+}
+
+.lab-members-photo {
+    width: 500px;
+    height: auto;
+    float: left; 
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 1140px) {
+    .lab-members-photo {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .lab-members-photo {
+        width: 100%;
     }
 }
