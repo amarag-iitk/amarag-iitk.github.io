@@ -25,57 +25,64 @@
     img {
     cursor: pointer;
     transition: 0.3s;
+    opacity: 1;
     }
 
     img:hover {opacity: 0.7;}
 
-/* The Modal (background) */
     #image-viewer {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0,0.9);
-    }
-    .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-    }
-    .modal-content { 
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
-    @keyframes zoom {
-        from {transform:scale(0)} 
-        to {transform:scale(1)}
-    }
-    #image-viewer .close {
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-    #image-viewer .close:hover,
-    #image-viewer .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    @media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+  display: none;
+  z-index: 999;
+}
+
+#image-viewer div {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-viewer div img {
+  display: block;
+  max-height: 700px;
+  height: 60%;
+  animation: showImage 0.5s;
+  opacity: 1;
+}
+
+@keyframes  showImage {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#close {
+  position: absolute;
+  top: 150px;
+  right: 35px;
+  color: white;
+  font-size: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#close:hover, #close:focus {
+  opacity: 0.8;
+}
+
+@media  screen and (max-width: 700px) {
+  .viewer {
+    width: 100%;
+  }
 }
 </style>
 <body>
@@ -155,7 +162,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <div class="images"><img src="../assets/IMG for DAAD material resource.png" alt="" class="images img-fluid research-image-right"></div>
+                <div class="images">
+                    <img src="../assets/IMG for DAAD material resource.png" alt="" class="img-fluid image research-image-right">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Material resources program. 2024-2025. BMZ, Germany. (Co-PI: Prof. T.G. Gopakumar, ChE, IITK) 
                 </strong>
@@ -171,7 +180,7 @@
         <div class="row">
             <div class="col justify-content-center">
                 <div class="images">
-                    <img src="../assets/simlipal.jpg" alt="" class="images img-fluid research-image-left">
+                    <img src="../assets/simlipal.jpg" alt="" class="img-fluid image research-image-left">
                     <div class="img-zoom-result"></div>
                 </div>
                 <strong class="normal-text-header" style="text-align: justify;">
@@ -188,7 +197,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <img src="../assets/IODP map.png" alt="iodp" class="images img-fluid research-image-right">
+                <div class="images">
+                    <img src="../assets/IODP map.png" alt="iodp" class="img-fluid image research-image-right">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Flow sense and emplacement setting of the Mid-Norwegian continental margin basalts. 2023-2026. NCPOR, MoES, India. 
                 </strong>
@@ -203,7 +214,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <img src="../assets/lonar.jpg" alt="simlipal" class="images img-fluid research-image-left">
+                <div class="images">
+                    <img src="../assets/lonar.jpg" alt="simlipal" class="img-fluid image research-image-left">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Impact excavation processes on terrestrial analogues for Mars: a case study at Lonar Crater, India. 2021-2024. AvH Foundation, Germany. (Co-PI: Dr. J. Wilk, Uni. Freiburg, Germany). 
                 </strong>
@@ -225,7 +238,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <img src="../assets/dhala.jpg" alt="dhala" class="images img-fluid research-image-right">
+                <div class="images">
+                    <img src="../assets/dhala.jpg" alt="dhala" class="img-fluid image research-image-right">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Origin and emplacement of impact melt at Dhala Impact structure, India. 2020-2024. IIT-K, India.  
                 </strong>
@@ -240,7 +255,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <img src="../assets/Dhala mag anonmaly.jpg" alt="dhala" class="images img-fluid research-image-left">
+                <div class="images">
+                    <img src="../assets/Dhala mag anonmaly.jpg" alt="dhala" class="img-fluid image research-image-left">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Linking microstructures, magnetic fabrics and magnetic anomaly at impact structures. 2020-2022. SERB-DST, India.  
                 </strong>
@@ -255,7 +272,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <img src="../assets/Turkey, CL image.jpg" alt="dhala" class="images img-fluid research-image-right">
+                <div class="images">
+                    <img src="../assets/Turkey, CL image.jpg" alt="dhala" class="img-fluid image research-image-right">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Fast deformation in impact cratering and super shears. 2017. Freiburg University, Germany.  
                 </strong>
@@ -270,7 +289,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <img src="../assets/impact experiemnt gneiss.jpg" alt="dhala" class="images img-fluid research-image-left">
+                <div class="images">
+                    <img src="../assets/impact experiemnt gneiss.jpg" alt="dhala" class="img-fluid image research-image-left">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Shock- and pressure wave induced fracturing: Clues to impact cratering mechanics and other rapid geo-processes. 2017-2019. AvH Foundation, Germany  
                 </strong>
@@ -285,7 +306,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <img src="../assets/Mexico fieldwork.jpg" alt="dhala" class="images img-fluid research-image-right">
+                <div class="images">
+                    <img src="../assets/Mexico fieldwork.jpg" alt="dhala" class="img-fluid image research-image-right">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Tectonic and magnetic evolution of Cenozoic Volcanism in Central Mexico. 2015-2017. DGPA, Mexico.  
                 </strong>
@@ -300,7 +323,9 @@
     <div class="col-11 col-xl-10 border team-boxes bg-light">
         <div class="row">
             <div class="col justify-content-center">
-                <img src="../assets/Fold Lockne.jpg" alt="dhala" class="images img-fluid research-image-left">
+                <div class="images">
+                    <img src="../assets/Fold Lockne.jpg" alt="dhala" class="img-fluid image research-image-left">
+                </div>
                 <strong class="normal-text-header" style="text-align: justify;">
                     Structural Studies in Lonar Crater India and Lockne Crater, Sweden. 2011 to 2015. CSIR, India and DAAD, Germany.  
                 </strong>
@@ -313,9 +338,24 @@
 </div>
 
 <div id="image-viewer">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="full-image">
+    <div>
+        <span id="close">&times;</span>
+        <img id="full-image">
+    </div>
 </div>
+
+<script>
+    document.querySelectorAll('.image').forEach(image => {
+        image.addEventListener('click', event => {
+            document.getElementById('full-image').setAttribute('src', image.getAttribute('src'));
+            document.getElementById('image-viewer').style.display = 'block';
+        })
+    })
+
+    document.getElementById('close').addEventListener('click', function() {
+        document.getElementById('image-viewer').style.display = 'none';
+    })
+</script>
 
 <!--footer-->
 <div class="row primary-theme justify-content-center">
