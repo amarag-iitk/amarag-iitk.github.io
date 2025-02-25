@@ -81,6 +81,23 @@
     width: 100%;
   }
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
 </style>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -164,11 +181,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Numerical and hydrocode simulation of shock attenuation in layered target. 2024-2026. DRDO, India
             </p>
-            <a href="#popup1" style="text-decoration: none; position: relative; bottom: 0px;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup1')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -179,11 +196,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Bagh Dinosaur Fossil Region, Dhar, Madhya Pradesh. 2024-2026. MPTB, India. (Co-PI: Dr. S.C. Tripathi)
             </p>
-            <a href="#popup2" style="text-decoration: none; position: relative; bottom: 0; right: 0;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup2')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -194,11 +211,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Material resources program. 2024-2025. BMZ, Germany. (Co-PI: Prof. T.G. Gopakumar, ChE, IITK)
             </p>
-            <a href="#popup3" style="text-decoration: none; position: relative; bottom: 0; right: 0;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup3')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -209,11 +226,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Determining the origin of the Simlipal Volcanics: meteoritic impact vs effusive volcanism. 2024-2026. STC, ISRO, India.
             </p>
-            <a href="#popup4" style="text-decoration: none; position: relative; bottom: 0; right: 0;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup4')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -224,11 +241,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Flow sense and emplacement setting of the Mid-Norwegian continental margin basalts. 2023-2026. NCPOR, MoES, India.
             </p>
-            <a href="#popup5" style="text-decoration: none; position: relative; bottom: 0; right: 0;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup5')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
 </div>
@@ -248,11 +265,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Impact excavation processes on terrestrial analogues for Mars: a case study at Lonar Crater, India. 2021-2024. AvH Foundation, Germany. (Co-PI: Dr. J. Wilk, Uni. Freiburg, Germany).
             </p>
-            <a href="#popup6" style="text-decoration: none; position: relative; bottom: 0px;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup6')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -263,11 +280,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Origin and emplacement of impact melt at Dhala Impact structure, India. 2020-2024. IIT-K, India.
             </p>
-            <a href="#popup7" style="text-decoration: none; position: relative; bottom: 0px;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup7')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -278,11 +295,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Linking microstructures, magnetic fabrics and magnetic anomaly at impact structures. 2020-2022. SERB-DST, India.  
             </p>
-            <a href="#popup8" style="text-decoration: none; position: relative; bottom: 0px;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup8')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -293,11 +310,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Fast deformation in impact cratering and super shears. 2017. Freiburg University, Germany.  
             </p>
-            <a href="#popup9" style="text-decoration: none; position: relative; bottom: 0px;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup9')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -308,11 +325,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Shock- and pressure wave induced fracturing: Clues to impact cratering mechanics and other rapid geo-processes. 2017-2019. AvH Foundation, Germany  
             </p>
-            <a href="#popup10" style="text-decoration: none; position: relative; bottom: 0px;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup10')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -323,11 +340,11 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Tectonic and magnetic evolution of Cenozoic Volcanism in Central Mexico. 2015-2017. DGAPA, Mexico.  
             </p>
-            <a href="#popup11" style="text-decoration: none; position: relative; bottom: 0px;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup11')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
     <div class="border research-boxes bg-light" style="position: relative;">
@@ -338,15 +355,14 @@
             <p class="normal-text-header pop-header" style="text-align: center;">
                 Structural Studies in Lonar Crater India and Lockne Crater, Sweden. 2011 to 2015. CSIR, India and DAAD, Germany.  
             </p>
-            <a href="#popup12" style="text-decoration: none; position: relative; bottom: 0px;">
-                <p class="pop-p" style="text-align: end; color: #00876c; ">
+            <div style="display: flex; justify-content:flex-end">
+                <button class="pop-p" onclick="openPopup('popup12')" style="border-style: none; background: none; text-decoration: none; color: #00876c;" >
                     Read More...
-                </p>
-            </a>
+                </button>
+            </div>
         </div>
     </div>
 </div>
-
 
 <!--IMPORTANT: Keep all the popup divs at the bottom of this code or else the page will break-->
 <div id="popup1" class="popup">
@@ -358,9 +374,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             We want to understand the affect of material properties on attenuation. We study the relection refraction of the shock waves at layer boundaries and quntify the postive and negative superpostion. 
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup1')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup2" class="popup">
@@ -372,9 +388,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             The Geodiversity of India is as diverse as its cultural diversity. This project deals with conservation of the dinosaurian nesting sites in the Maastrichtian (72-66 Ma) Lameta Formation in the Dhar District is one of India's best-exposed dinosaur fossil sites. 
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup2')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup3" class="popup">
@@ -386,9 +402,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             In earth sciences, microscopic studies are used extensively for mineralogical, textural and microstructural studies. This is an instrumentation grant for developing microscopy fascilities. 
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup3')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup4" class="popup">
@@ -400,9 +416,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             Here, we try to understand the evolution of the Simlipal volcanics. This project uses microscopic, spectrocopic and magnetic lines of evidence.to undesrant the origing of simplipal volcanics. 
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup4')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup5" class="popup" style="overflow-y: scroll;">
@@ -414,9 +430,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             We seek to understand the nature, cause and climate implications of excess magmatism during the northeast Atlantic continental breakup. Voluminous magmatism also coincides with the global greenhouse climate in the early Paleogene and has been proposed as a driver of both short-term (Paleocene-Eocene Thermal Maximum) and long-term (early Eocene Climate Optimum) global warming. Improved constraints on melting conditions, timing of magmatism, magmatic fluxes in time and space, eruption environment, sedimentary proxy data, and relative timing of climate events are required to resolve these linked controversies. 
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup5')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup6" class="popup" style="overflow-y: scroll;">
@@ -428,9 +444,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             Lonar crater is a prestine, simple impact crater in Maharashtra, India. It is marked by a pronounced crater rim that has an average height of 30 m. The continuous ejecta blanket of Lonar crater extends to an average distance of 1 km from the crater rim. Lonar crater allows us to investigate and understand the crater formation, structural uplift, ejecta emplacement and rampart formation process, that is also of great importance for Martian impact craters.   
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup6')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup7" class="popup" style="overflow-y: scroll;">
@@ -442,9 +458,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             The Dhala impact structure formed 2.5 to 1.7 billion years ago in the Bundelkhand craton. The structure represents an eroded remnant of the largest impact structure currently known from the Indian subcontinent. We try to understand the emplacement setting such as fallout vs. in-situ emplacement. Magnetic fabrics will be used for shock barometry. This study will quantify the changes in magnetic properties of the impact melt breccia by comparing them with the unshocked country rocks. Thereafter, these changes will be co-related with micro to meso scale deformation features of the magnetic carriers. 
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup7')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup8" class="popup" style="overflow-y: scroll;">
@@ -456,9 +472,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             Microscopic deformation and the changes in magnetic properties due to shockwaves are the two most important factors contributing to the changed magnetic anomaly pattern after impact. This study investigated the origin of magnetic anomalies in impact craters with crystalline target rocks and explored the rock magnetic properties and microstructural deformation that are causing the typical magnetic anomaly patterns after meteoritic impact. 
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup8')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup9" class="popup" style="overflow-y: scroll;">
@@ -470,9 +486,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             Strain rates in  seismogenic shear zones may reach magnitudes that are otherwise only realized during meteorite impact cratering. Basalts of the North-Anatolian Fault Zone (Turkey), that were deformed at the Düzce supershear earthquake 1999 (magnitude 7.2) will be quantitatively compared with basalts of the Lonar impact crater (India). To constrain the influence of strain rate on deformation, basalts will additionally be deformed experi¬mentally using a Split-Hopkinson Pressure Bar.
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup9')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup10" class="popup" style="overflow-y: scroll;">
@@ -484,9 +500,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             Shock wave-induced fracturing at terrestrial and lunar impact structures is long recognized. Shock wave may produce planar and/or non-planar fractures. Shock waves cause fast fracture propagation at elevated strain rates and fragmentation. This study  therefore investigated the brittle deformation at these conditions by conducting experiments with the SHPB and dual stage gas gun.
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup10')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup11" class="popup" style="overflow-y: scroll;">
@@ -498,9 +514,9 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             The Trans-Mexican Volcanic Belt (TMVB), one of the largest continental volcanic arcs built on the North America plate, spans about 1000 km and crosses central Mexico from the Pacific to the Atlantic coast. Subduction-related volcanism in Mexico resumed in the Eocene after Laramide deformation and formed the Sierra Madre Occidental silicic volcanic province. During early to middle Miocene time, the volcanic arc rotated counterclockwise and, in the late Miocene, began to form the TMVB as a result of subduction of the Cocos and Rivera plates. The initial stage of the TMVB is marked by widespread basaltic volcanism, emplaced from the Pacific coast to the longitude of Mexico City, to the north of the modern volcanic arc. Our objective is to understand the tectonic and structural setup using field mapping and paleomagnetism.
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup11')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 <div id="popup12" class="popup" style="overflow-y: scroll;">
@@ -512,30 +528,19 @@
         <p style="text-align: justify; margin-top: 15px;" class="normal-text pop-p">
             The deformation caused during impact cratering, is provoked by impact generated outward radiating shock waves. Peak shock pressure exerted by the shock wave is a yard stick for the intensity of deformation. The most common shock barometers are absent in weakly shocked rocks. In this study, therefore, a combination of rock magnetic and microfracture investigations are used for shock baromtery at the Lonar crater, India and the Lockne crater, Sweden.
         </p>
-        <a href="#" style="display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; text-decoration:none; border-radius: 3px;">
+        <button onclick="closePopup('popup12')" style="border-style:none; display: inline-block; margin-top: 10px; padding:5px 10px; background-color: #dc3545; color: #fff; border-radius: 3px;" >
             Close
-        </a>
+        </button>
     </div>
 </div>
 
 <script>
-    const openPopup = document.getElementById('openPopup');
-        const closePopup = document.getElementById('closePopup');
-        const popup = document.getElementById('popup');
-
-        openPopup.addEventListener('click', () => {
-            popup.style.display = 'flex';
-        });
-
-        closePopup.addEventListener('click', () => {
-            popup.style.display = 'none';
-        });
-
-        window.addEventListener('click', (event) => {
-            if (event.target === popup) {
-                popup.style.display = 'none';
-            }
-        });
+    function openPopup(popupId) {
+        document.getElementById(popupId).style.display = "flex";
+    }
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = "none";
+    }
 </script>
 
 <!--footer-->
