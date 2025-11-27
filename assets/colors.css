@@ -90,7 +90,7 @@ li{
 .publication-elements{
     font-family: 'Times New Roman', Times, serif;
     color: black;
-    font-size: 17px;
+    font-size: 19px;
     padding-left: 5px;
     text-align: justify;
     text-justify: inter-word;
@@ -284,13 +284,13 @@ li{
 .about-the-group{
     text-align: center; 
     font-family: 'Times New Roman', Times, serif; 
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .about-the-group-det{
     text-align: justify; 
     font-family: 'Times New Roman', Times, serif; 
-    font-size: 24px;
+    font-size: 28px;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1200px) {
